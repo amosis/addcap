@@ -1,5 +1,12 @@
 EXAMPLES are in demo.sh file.
 
+I built this on OS X Mavericks.  It may not work on anything else.
+I used brew to install libjpeg and pip to install PIL
+
+#brew install libjpeg
+#<stuff happens>
+#pip install PIL
+
 python addcap.py -h
 usage: addcap.py [-h] [-i IMG] [-sx STARTX] [-sy STARTY] [-tw TEXTWRAPWIDTH]
                  [-fs FONTSIZE] [-cc CHARACTERCOUNT] [-sc STARTINGCORNER]
