@@ -7,6 +7,10 @@ I used brew to install libjpeg and pip to install PIL
 #<stuff happens>
 #pip install PIL
 
+once you've got all that, you should be able to run 'python addcap.py -h' to get the list below.
+If you run 'sh demo.sh' it will tun the program a bunch of times and create a series of captioned images in the 'demo' folder that it creates.
+
+
 python addcap.py -h
 usage: addcap.py [-h] [-i IMG] [-sx STARTX] [-sy STARTY] [-tw TEXTWRAPWIDTH]
                  [-fs FONTSIZE] [-cc CHARACTERCOUNT] [-sc STARTINGCORNER]
