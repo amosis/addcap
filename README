@@ -11,7 +11,8 @@ once you've got all that, you should be able to run 'python addcap.py -h' to get
 If you run 'sh demo.sh' it will tun the program a bunch of times and create a series of captioned images in the 'demo' folder that it creates.
 
 
-As it stands, the newly created images will OVERWRITE any 'created' pictures.  This is by design, or really, lack of care for the 'created' pictures since they can be re-created easily.
+As it stands in the demo, the newly created images will OVERWRITE any 'created' pictures.  This is by design, or really, lack of care for the 'created' pictures since they can be re-created easily.
+If you pass the same -o file prefix and -f folder, it will overwrite the images there, it will not check and create a unique filename.
 
 
 python addcap.py -h
