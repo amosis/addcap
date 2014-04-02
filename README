@@ -1,0 +1,42 @@
+EXAMPLES are in demo.sh file.
+
+python addcap.py -h
+usage: addcap.py [-h] [-i IMG] [-sx STARTX] [-sy STARTY] [-tw TEXTWRAPWIDTH]
+                 [-fs FONTSIZE] [-cc CHARACTERCOUNT] [-sc STARTINGCORNER]
+                 [-ca CALLOUTARROW] [-f FOLDER] [-o OUTFILE] [-qf QUOTEFILE]
+                 [-q QUOTE [QUOTE ...]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i IMG, --img IMG     Image to add a caption to.
+  -sx STARTX, --startX STARTX
+                        Starting X Coordinate for caption bubble.
+  -sy STARTY, --startY STARTY
+                        Starting Y Coordinate for caption bubble.
+  -tw TEXTWRAPWIDTH, --textWrapWidth TEXTWRAPWIDTH
+                        How many characters before a line wrap in the bubble?
+  -fs FONTSIZE, --fontSize FONTSIZE
+                        Font size
+  -cc CHARACTERCOUNT, --characterCount CHARACTERCOUNT
+                        Character count. limited to 140 by default.
+  -sc STARTINGCORNER, --startingCorner STARTINGCORNER
+                        The corner that your start coordinates create. Values
+                        are Values are UPPER_LEFT, LOWER_LEFT, LOWER_RIGHT,
+                        UPPER_RIGHT
+  -ca CALLOUTARROW, --calloutArrow CALLOUTARROW
+                        Which call out arrow do you want, starting at
+                        11oclock, going counter clockwise. Just put the
+                        number, like 6
+  -f FOLDER, --folder FOLDER
+                        If defined, create a folder and store addcap images
+                        there. Otherwise defaults to current folder.
+  -o OUTFILE, --outfile OUTFILE
+                        The outfile prefix name. Will append a number and JPG
+                        to the end.
+  -qf QUOTEFILE, --quoteFile QUOTEFILE
+                        A file with 1 quote per line. Quotes should not exceed
+                        140 characters.
+  -q QUOTE [QUOTE ...], --quote QUOTE [QUOTE ...]
+                        One or more quotes in the form "This is a quote.",
+                        "This is another quote", "This is yet another quote".
+                        Individual quotes should not exceed 140 characters.
