@@ -10,9 +10,25 @@ I used brew to install libjpeg and pip to install PIL
 once you've got all that, you should be able to run 'python addcap.py -h' to get the list below.
 If you run 'sh demo.sh' it will tun the program a bunch of times and create a series of captioned images in the 'demo' folder that it creates.
 
-
 As it stands in the demo, the newly created images will OVERWRITE any 'created' pictures.  This is by design, or really, lack of care for the 'created' pictures since they can be re-created easily.
 If you pass the same -o file prefix and -f folder, it will overwrite the images there, it will not check and create a unique filename.
+
+
+Some basics.
+The upper left corner of the image is (x,y) (0,0).
+From that coordinate, moving right increases (x).
+Moving down increases (y)
+If you have an image that is 1600x1200, the middle coordinate is (800,600).
+If you set your startX and startY to (800,600), you then need to tell the script which corner this is.  
+The options are 
+UPPER_LEFT 
+LOWER_LEFT 
+LOWER_RIGHT
+UPPER_RIGHT
+
+This tells the script which direction to draw the bubble.  If your start corner is UPPER_LEFT, the script does the math to draw the box down and to the right.
+If your start corner is LOWER_RIGHT, the script does the math to figure out where UPPER_LEFT is, then draws the box from there.
+The PIL drawing methods all start in UPPER_LEFT, go down to LOWER_LEFT, go over to LOWER_RIGHT, then up to UPPER_RIGHT, then back to the starting UPPER_LEFT.
 
 
 python addcap.py -h
